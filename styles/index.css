@@ -28,15 +28,20 @@ body {
     -webkit-touch-callout: none;
 }
 
-
 html::-webkit-scrollbar,
 .hide::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none;
 }
 
-
-
 button {
     cursor: pointer;
+}
+
+.my-indicator {
+    display: none;
+}
+.htmx-request .my-indicator,
+.htmx-request.my-indicator {
+    display: inline;
 }
