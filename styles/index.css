@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-primary-50: #fbf6f1;
+    --color-primary-100: #f5eadf;
+    --color-primary-200: #ead1be;
+    --color-primary-300: #dcb195;
+    --color-primary-400: #ce8c69;
+    --color-primary-500: #c87c5b;
+    --color-primary-600: #b55d41;
+    --color-primary-700: #974937;
+    --color-primary-800: #7a3c32;
+    --color-primary-900: #63332b;
+    --color-primary-950: #351915;
+}
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+html,
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+html::-webkit-scrollbar,
+.hide::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.my-indicator {
+    display: none;
+}
+.htmx-request .my-indicator,
+.htmx-request.my-indicator {
+    display: inline;
+}
